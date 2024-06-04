@@ -1,0 +1,340 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #d7d7d7;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+@media screen and (min-width: 900px) {
+    
+
+    .header {
+        display: flex;
+        background-color: #22222e;
+        padding: 40px 40px 5px  ;
+        border-radius: 5px;
+        
+    }
+}
+    .logo{
+        font-family:serif ;
+        font-size: 40px;
+       color: #ffc904;
+       margin: 0 17% 0 3%;
+       
+    }
+    
+    .nav, ul {
+        display: flex;
+        list-style-type: none;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        gap: 40px;
+        padding-top: 20px;
+    
+    }
+    
+    .nav, a {
+        text-decoration: none;
+        padding-bottom: 10px;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    .nav a:hover {
+        color: rgb(255, 241, 241);
+        font-size: 26.5px;
+        transform: scale(2.1);
+        transition: 1.5s;
+        
+    }
+
+h1{
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: #ffc904;
+}
+footer {
+    background-color: #22222e;
+}
+.contact-footer{
+    padding: 25px ;
+    text-align: center;
+    
+}
+
+.contact-footer a {
+    color: #ffc904;
+    font-size: 20px;
+    padding-top: 0;
+}
+
+.contact-footer ul {
+   justify-content: center;
+   gap: 25px;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #ffc904;
+}
+
+svg {
+    color: #ffc904;
+}
+
+.nome-cadastro{
+    color:#ffc904;
+    font-size: 40px;
+}
+
+.cadastro{
+    background-color: #fefefe;
+    display: block;
+    margin: 0 500px 40px;
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px #0000006e;
+    text-align: center;
+    background-color: var(--bg-grey-light);
+}
+
+
+.cadastro input{
+    width: 90%;
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin: 6px;
+    border-radius: 6px;
+    background-color:white;
+}
+
+.cadastro .entrar{
+    background-color:  #ffc904;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    height: 45px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.cadastro .criarConta{
+    background-color: #2d3239;
+    color: #ffc904;
+    width: 90%;
+    height: 45px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 35px 0 5px 0;
+}
+
+.esqueceuSenha{
+    font-size: 17.5px;
+    color:#ffc904; 
+}
+
+
+
+
+.vazia{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-top: 30px;
+}
+
+.criarConta:hover{
+background-color: #ffc904;
+color:#2d3239 ;
+}
+
+.entrar:hover{
+    background-color:#2d3239 ;
+    color:#ffc904 ;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Definição das cores */
+  body {
+    /* cores de texto */
+    --text-white: #ffffff;
+    --text-dark: #090e16;
+  
+    /* cores de fundo */
+    --bg-grey-light: #f5f5f5;
+    --bg-white: #ffffff;
+    --bg-blue-dark: #0c121c;
+    --bg-indigo: #202026;
+  
+    font-family: "Inter", sans-serif;
+    line-height: 1.7;
+    background-color: var(--bg-grey-light);
+  }
+  .dark {
+    --text-dark: #ffffff;
+    --bg-grey-light: #0c121c;
+    --bg-blue-dark: #142136;
+    --bg-indigo: #ffffff;
+  }
+  
+  .header-button{  
+    padding-left: 13px;
+    margin-top: 20px;
+
+}
+
+  .button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: var(--bg-indigo) ;
+    color:#ffc904;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  
+  .hora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+  
+  .clock {
+    align-items: center;
+    background-color: #ffc904;
+    border: 1px solid #000;
+    border-radius: 3%;
+    color: black;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+  }
+
+  .clima, h1{
+    color: #ffc904;
+}
+
+  .busca {
+    display: flex;
+    width: 300px;
+    padding-top: 20px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #555;
+    color: black;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: #ffc904;
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    position: absolute;
+    border: 1px dotted #FFF;
+    margin-top: -320px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #ffc904;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
+}
+
+textarea {
+    width: 26em;
+    height: 8em;
+}

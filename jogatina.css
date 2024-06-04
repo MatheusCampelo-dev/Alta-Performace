@@ -1,0 +1,409 @@
+
+h1, h2, h3, .sub-title {
+    text-transform: uppercase;
+}
+
+h1 {
+    line-height: 1.2em;
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+h2 {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+
+h2:before {
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: yellow;
+    position: absolute;
+    right: -1em;
+    bottom: 0.3em;
+}
+
+.resume {   
+    margin: 0 auto;
+    background-color:#ffc904;
+    padding-left: 10px;
+}
+
+.profile-img {
+    min-height: 20em;
+    position: relative;
+}
+
+.profile-img img {
+    position: absolute;
+    padding-right: 252px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 320px;
+    object-fit:cover;
+    padding-left: 255px;
+    
+}
+
+.title {
+    background-color: white;
+    color: #111;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.title h1 {
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.separator {
+    width: 5em;
+    height: 4px;
+    background-color:#ffc904;
+    margin: 1em 0;
+    
+}
+
+.sub-title {
+    color: #5b5b5b;
+    padding-left: 20px;
+
+}
+
+.details {
+    color: #f2f2f2;
+}
+
+.col-1 {
+    background-color: #292935;
+}
+
+.col-2 {
+    background-color: #22222e;
+}
+
+.col-1 > div, .col-2 > div {
+    padding: 1.5em;
+}
+
+.contact-info > div:not(:last-child), .experience > div:not(:last-child) {
+    margin-bottom: 2em ;
+}
+
+    
+
+.education > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.experience p span {
+     padding: 0.2em 0.5em;
+     background-color: #ffc904;
+     color: #111;
+     border-radius: 5px;
+     margin-right: 0.5em;
+}
+
+.education p:nth-child(2) {
+    margin-block: 0.3em;
+}
+
+.experience p:nth-child(2){
+    margin-block: 0.7em ;
+}
+
+.expertise .circles {
+    padding: 1em 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 4em;
+}
+
+.circle {
+    background: #2d3239;
+    border: 1px #555 solid;
+    border-radius: 50%;
+    position: relative;
+    width: 5.2em;
+    height: 5.2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle p {
+    font-size: 0.8em;
+    padding: 2em;
+    line-height: 1em;
+
+}
+
+.circle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.track {
+    fill: none;
+}
+
+.progress {
+    fill: none;
+    stroke: #ffc904;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+     .education > div {
+        grid-template-columns: 1fr;
+     }
+    }
+
+@media screen and (min-width: 900px) {
+    .resume {
+        padding-left: 3em;
+    }
+    h1 {font-size: 3.2em;}
+    h2 {font-size: 1.8em;}
+    .sub-title {font-size: 1.7em;}
+    .matheus {
+        display: grid;
+        grid-template-columns: 2fr 7fr;
+    }
+    .details {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+.header {
+    display: flex;
+    background-color: #22222e;
+    padding: 40px 40px 5px  ;
+    border-radius: 5px;
+    
+}
+
+.logo{
+    font-family:serif ;
+    font-size: 40px;
+   color: #ffc904;
+   margin: 0 17% 0 3%;
+   padding-top: 10px;
+}
+
+.nav, ul {
+    display: flex;
+    list-style-type: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    gap: 40px;
+    padding-top: 20px;
+    margin-left: 20px;
+
+}
+
+.nav, a {
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.nav a:hover {
+    color: rgb(255, 241, 241);
+    font-size: 26.5px;
+    transform: scale(2.1);
+    transition: 1.5s;
+    
+}
+
+footer {
+    background-color: #22222e;
+}
+.contact-footer{
+    padding: 25px ;
+    text-align: center;
+    
+}
+
+.contact-footer a {
+    color: #ffc904;
+    font-size: 20px;
+    padding-top: 0;
+}
+
+.contact-footer ul {
+   justify-content: center;
+   gap: 25px;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #ffc904;
+}
+
+svg {
+    color: #ffc904;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .hora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+  
+  .clock {
+    align-items: center;
+    background-color: #ffc904;
+    border: 1px solid #000;
+    border-radius: 3%;
+    color: black;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+  }
+
+
+
+.busca {
+    display: flex;
+    width: 300px;
+    padding-top: 20px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #555;
+    color: black;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: #ffc904;
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    position: absolute;
+    border: 1px dotted #FFF;
+    margin-top: -275px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #ffc904;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
+}
+
+
+
+
+
+
